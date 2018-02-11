@@ -17,7 +17,7 @@ payment_systems.id: 2682;
 packages: 1.
 
 Для тестирования был выбран язык программирования C# и Framework NUnit.
- Есть уже опыт написания кода на C#, поэтому был выбран именно C#.
+ У меня уже есть уже опыт написания кода на C#, поэтому был выбран именно C#.
  т.к. нет опыта написания автоматизированных тестов был выбран первый попавшийся Framework NUnit.
  
  Список замечаний к API:
@@ -29,4 +29,5 @@ packages: 1.
 { "http_status_code": 422, "message": "digital_content_does_not_belong_to_project", "extended_message": { "global_errors": [], "property_errors": { "digital_content": [ "digital_content_does_not_belong_to_project" ] } }, "request_id": "cd3b1db" }
 Текст ошибки не должен быть идентификатором.
 Аналогично пришла ошибка "digital_content_not_existing_id" при задании "..."digital_contents":[{"id":15861..."
+В результате не удалось сформировать правильный запрос digital_contents.
 5. При удалении акции удаляются даже те, у которых enabled = true, в ответе запроса DeletePromotion нет никаких ошибок. 
